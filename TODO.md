@@ -3,3 +3,6 @@
 [] come funzionano le bega di classi in italia
 [] default team creation/enter
 [] importa pdf e balle varie da laravel
+
+
+user: studente/insegnante, classe, sezione, schooluuid, cognome

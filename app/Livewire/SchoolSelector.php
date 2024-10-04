@@ -10,6 +10,7 @@ class SchoolSelector extends Component
     public $search = '';
     public $schools = [];
     public $selectedSchool = null;
+    public $selectedSchoolCode = null;
 
     public function updatedSearch()
     {
@@ -55,8 +56,7 @@ class SchoolSelector extends Component
     public function selectSchool($schoolId)
     {
         $this->selectedSchool = School::find($schoolId);
-        
-        dd($this->selectedSchool->indirizzoscuola);
+        $this->selectedSchoolCode = $this->selectedSchool->codicescuola;
     }
 
     public function render()

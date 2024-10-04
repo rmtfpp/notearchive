@@ -12,7 +12,6 @@
     </div>
 
     <h2 class="mb-4 text-2xl font-semibold">Search Results</h2>
-
     @if(count($schools) == 0)
         <p class="text-gray-500">No schools found.</p>
     @else
@@ -33,7 +32,6 @@
             @endforeach
         </ul>
     @endif
+
+    <input type="hidden" name="school" id="school" value="{{ $selectedSchoolCode }}">
 </div>
-
-
-
